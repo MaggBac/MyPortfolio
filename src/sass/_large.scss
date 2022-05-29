@@ -1,0 +1,24 @@
+@media (min-width: 992px) {
+	.nav {
+		&-desktop {
+			display: block;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		}
+		&-mobile {
+			display: none;
+		}
+
+		&-link {
+			color: rgb(105, 96, 88);
+			animation: none;
+
+			&:hover {
+				color: #e2e2df;
+			}
+		}
+	}
+
+	.hamburger {
+		display: none;
+	}
+}

@@ -1,0 +1,145 @@
+<main class="main">
+    <section class="about-me" id="aboutme">
+        <div class="wrapper">
+            <h2 class="section-aboutme">About me</h2>
+            <div class="underline"></div>
+            <div class="row">
+                <div class="col-sm-12 col-md-5 col-lg-4">
+                    <img src="/src/img/98071308903.JPG" alt="photo of a girl with her hair down">
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg-8">
+                    <p>I graduated from Bioinformatics studies, but my passion is creating responsive websites. I
+                        have
+                        been developing in this field for 1.5 years, I created three pages using html, sass, css,
+                        bootstrap, grid, gulp. I also created two pages in the react and django framework. Below are
+                        my
+                        projects uploaded on github. Apart from creating websites, I'm also interested in pilates,
+                        macrame and photography.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-projects" id="project">
+        <div class="wrapper">
+            <h2 class="section-heading">My Projects</h2>
+            <div class="underline"></div>
+            <div class="project__cards">
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="project__card" onclick="void(0)">
+                            <div class="project__card-img project__card-img--first">
+                                <h3 class="project__card-img-title">Pardise</h3>
+                                <p class="project__card-img-info"> <i class="fas fa-angle-double-right"></i> More
+                                    information</p>
+                            </div>
+                            <div class="project__card-info">
+                                <h3 class="project__card-info-title">Paradise</h3>
+                                <ul class="project__card-info-list">
+                                    <li class="project__card-info-list-item">Html</li>
+                                    <li class="project__card-info-list-item">Sass</li>
+                                    <li class="project__card-info-list-item">JS</li>
+                                    <li class="project__card-info-list-item">Visual additions</li>
+                                </ul>
+                                <button class="project__card-info-btn btn-special-animation"
+                                    onclick=" window.open('https://maggbac.github.io/Paradise/','_blank')">See</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="project__card" onclick="void(0)">
+                            <div class="project__card-img project__card-img--second">
+                                <h3 class="project__card-img-title">ProGamers</h3>
+                                <p class="project__card-img-info"> <i class="fas fa-angle-double-right"></i> More
+                                    information</p>
+                            </div>
+                            <div class="project__card-info">
+                                <h3 class="project__card-info-title">ProGamers</h3>
+                                <ul class="project__card-info-list">
+                                    <li class="project__card-info-list-item">Html</li>
+                                    <li class="project__card-info-list-item">Sass</li>
+                                    <li class="project__card-info-list-item">Bootstrap</li>
+                                </ul>
+                                <button class="project__card-info-btn btn-special-animation"
+                                    onclick=" window.open('https://maggbac.github.io/ProGamers/index.html','_blank')">See</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="project__card" onclick="void(0)">
+                            <div class="project__card-img project__card-img--third">
+                                <h3 class="project__card-img-title">Invest</h3>
+                                <p class="project__card-img-info"> <i class="fas fa-angle-double-right"></i> More
+                                    information</p>
+                            </div>
+                            <div class="project__card-info">
+                                <h3 class="project__card-info-title">Invest</h3>
+                                <ul class="project__card-info-list">
+                                    <li class="project__card-info-list-item">Html</li>
+                                    <li class="project__card-info-list-item">Sass</li>
+                                    <li class="project__card-info-list-item">Grid</li>
+                                    <li class="project__card-info-list-item">Visual additions</li>
+                                </ul>
+                                <button class="project__card-info-btn btn-special-animation"
+                                    onclick=" window.open('https://maggbac.github.io/Invest---GRID/index.html','_blank')">See</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="project__card" onclick="void(0)">
+                            <div class="project__card-img project__card-img--fourth">
+                                <h3 class="project__card-img-title">DevSearch</h3>
+                                <p class="project__card-img-info"> <i class="fas fa-angle-double-right"></i>More
+                                    information</p>
+                            </div>
+                            <div class="project__card-info">
+                                <h3 class="project__card-info-title">DevSearch</h3>
+                                <ul class="project__card-info-list">
+                                    <li class="project__card-info-list-item">Django</li>
+                                    <li class="project__card-info-list-item">Api</li>
+                                    <li class="project__card-info-list-item">Python</li>
+                                    <li class="project__card-info-list-item">JS</li>
+                                    <li class="project__card-info-list-item">Html</li>
+                                </ul>
+                                <button class="project__card-info-btn btn-special-animation"
+                                    onclick=" window.open('https://github.com/MaggBac/devsearch','_blank')"><i
+                                        class="fab fa-github-square"></i> Github</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="wrapper">
+            <h2 class="section-aboutme">Contact</h2>
+            <div class="underline"></div>
+
+            <form onsubmit="sendEmail(); reset(); return false;" class="contact__form">
+
+                <div class="contact__form-top">
+                    <label for="name" class="contact__form-label">Full Name:</label>
+                    <input type="text" class="contact__form-input" id="name">
+
+                    <label for="email" class="contact__form-label">E-mail:</label>
+                    <input type="text" id="email" class="contact__form-input">
+                </div>
+
+                <label for="msg" class="contact__form-label">Message:</label>
+                <textarea id="msg" class="contact__form-textarea"></textarea>
+
+                <button type="submit" class="contact__form-btn btn-special-animation">Send</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
