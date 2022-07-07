@@ -8,13 +8,14 @@
                     <img src="/src/img/98071308903.JPG" alt="photo of a girl with her hair down">
                 </div>
                 <div class="col-sm-12 col-md-7 col-lg-8">
-                    <p>I graduated from Bioinformatics studies, but my passion is creating responsive websites. I
+                    <p>Hello! My name is Magdalena. I graduated from Bioinformatics studies. Over the past year I was working with SQL and Python but my passion is creating responsive websites, that's why I
                         have
-                        been developing in this field for 1.5 years, I created three pages using html, sass, css,
-                        bootstrap, grid, gulp. I also created two pages in the react and django framework. Below are
+                        been developing in this field for over 1 year. I created few pages using html, sass, css,
+                        bootstrap, grid, gulp. I also created two pages in the React and Django framework. Below are
                         my
                         projects uploaded on github. Apart from creating websites, I'm also interested in pilates,
-                        macrame and photography.</p>
+                        macrame and photography. My github page:  <a class= "github" href="https://github.com/MaggBac" target="_blank"><i
+                            class="fab fa-github-square"></i> Github </a>
                 </div>
             </div>
         </div>
@@ -93,21 +94,20 @@
                     <div class="col-sm-12 col-md-6 col-lg-6">
                         <div class="project__card" onclick="void(0)">
                             <div class="project__card-img project__card-img--fourth">
-                                <h3 class="project__card-img-title">DevSearch</h3>
+                                <h3 class="project__card-img-title">NewAdventures</h3>
                                 <p class="project__card-img-info"> <i class="fas fa-angle-double-right"></i>More
                                     information</p>
                             </div>
                             <div class="project__card-info">
-                                <h3 class="project__card-info-title">DevSearch</h3>
+                                <h3 class="project__card-info-title">NewAdventures</h3>
                                 <ul class="project__card-info-list">
-                                    <li class="project__card-info-list-item">Django</li>
-                                    <li class="project__card-info-list-item">Api</li>
-                                    <li class="project__card-info-list-item">Python</li>
-                                    <li class="project__card-info-list-item">JS</li>
+                                    <li class="project__card-info-list-item">React</li>
                                     <li class="project__card-info-list-item">Html</li>
+                                    <li class="project__card-info-list-item">Css</li>
+                                    <li class="project__card-info-list-item">JS</li>
                                 </ul>
                                 <button class="project__card-info-btn btn-special-animation"
-                                    onclick=" window.open('https://github.com/MaggBac/devsearch','_blank')"><i
+                                    onclick=" window.open('https://github.com/MaggBac/NewAdvetures','_blank')"><i
                                         class="fab fa-github-square"></i> Github</button>
                             </div>
                         </div>
@@ -121,20 +121,15 @@
             <h2 class="section-aboutme">Contact</h2>
             <div class="underline"></div>
 
-            <form onsubmit="sendEmail(); reset(); return false;" class="contact__form">
+            <form class="contact__form" action="https://formsubmit.co/magda.bac77@gmail.com" method="POST">
 
-                <div class="contact__form-top">
-                    <label for="name" class="contact__form-label">Full Name:</label>
-                    <input type="text" class="contact__form-input" id="name">
-
-                    <label for="email" class="contact__form-label">E-mail:</label>
-                    <input type="text" id="email" class="contact__form-input">
-                </div>
-
-                <label for="msg" class="contact__form-label">Message:</label>
-                <textarea id="msg" class="contact__form-textarea"></textarea>
-
-                <button type="submit" class="contact__form-btn btn-special-animation">Send</button>
+                <input type="hidden" name="_captcha" value="false">
+                <!-- <input type="hidden" name="_next" value="http://localhost:3000/?#contact"> -->
+                <input type="hidden" name="_next" value="http://localhost:3000/thankyou.html">
+                <input class="contact__form-top" type="name" name="name" placeholder="Name">
+                <input class="contact__form-top" type="email" name="email" placeholder="Email Address" required oninvalid="this.setCustomValidity('Please fill out this field. E-mail is required.')">
+                <textarea class="contact__form-bottom" type="text" name="Message" placeholder="Message" required oninvalid="this.setCustomValidity('Please fill out this field.')"></textarea>
+                <button type="submit" class="contact__form-btn">Send</button>
 
             </form>
 

@@ -25,5 +25,9 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "emailjs-com": "^3.2.0"
   }
 }
